@@ -1,3 +1,12 @@
+# Important note
+This this branch contains ZeroMQ release v4.3.2 plus the fix for libzmq [Issue 3756](https://github.com/zeromq/libzmq/issues/3756) which was fixed in [Pull request 3757](https://github.com/zeromq/libzmq/pull/3757) (2 commits). The branch was created with these commands:
+
+    $ git checkout v4.3.2
+    $ git checkout -b v4.3.2_Fix_Issue3756
+    $ git cherry-pick 3ace237
+    $ git cherry-pick 9f16513
+    
+    
 # ZeroMQ
 
 [![Build Status](https://travis-ci.org/zeromq/libzmq.png?branch=master)](https://travis-ci.org/zeromq/libzmq)
